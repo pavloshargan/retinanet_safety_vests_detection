@@ -8,6 +8,8 @@
 ## Clone keras-retinanet repo in ~/safety_vests_detection (folder of current repo):<br/>
 'git clone https://github.com/fizyr/keras-retinanet.git'
 
+
+
 ```console
 change list of classes in /keras-retinanet/keras_retinanet/preprocessing/pascal_voc.py
 ```
@@ -27,6 +29,12 @@ python3 setup.py build_ext --inplace
 # Train the model
 
 ### download PlumsVOC folder from https://drive.google.com/file/d/11BetQCcj8z0KIhNSeOrB_gKkkq47A4ki/view?usp=sharing and place it in this repo
+
+## Make directory to save the snaphots: <br/>
+```console
+mkdir -p TrainingOutput/snapshots
+
+```
 
 ## Run the training
 
