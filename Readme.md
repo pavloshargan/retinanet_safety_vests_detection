@@ -6,7 +6,7 @@
 # Setting up training
 
 ## Clone keras-retinanet repo in ~/safety_vests_detection (folder of current repo):<br/>
-'git clone https://github.com/fizyr/keras-retinanet.git'
+git clone https://github.com/fizyr/keras-retinanet.git
 
 
 
@@ -51,7 +51,7 @@ tensorboard --logdir ./TrainingOutput
 <br/>
 then open http://localhost:6006/ in a browser tab
 
-# Deploying
+# Predict
 Convert the latest(best) model to an inference mode: <br/><br/>
 ```console
 python3 keras_retinanet/bin/convert_model.py ./TrainingOutput/snapshots/WEIGHTSNAME.h5 ./RetinanetModels/PlumsInference.h5
@@ -64,4 +64,4 @@ video_processing(retinanet).ipynb
 video_processing(rcnn+opencv).ipynb
 
 # Accuracy improving
-## The accuracy of model can be improved with implementation of object tracking and increacing the amount of training data. Also tuning of confidence threshold for detection can yield some benefits.
+### The accuracy of model can be improved with implementation of object tracking and increacing the amount of training data. Also tuning of confidence threshold for detection can yield some benefits.
