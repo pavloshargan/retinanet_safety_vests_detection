@@ -1,6 +1,10 @@
-# Retinanet trained model  
+# Safety Vests Detector<br/><br/>
+
+
+
+## Retinanet trained model  
 ![retinanet trained model](./retinanet.gif)
-# Person detection + color detection
+## Person detection + color detection
 ![person detection color detection](./color_detection.gif)
 <br/><br/><br/><br/>
 # Setting up training
