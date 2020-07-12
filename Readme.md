@@ -8,14 +8,21 @@
 ## Clone keras-retinanet repo in ~/safety_vests_detection (folder of current repo):<br/>
 'git clone https://github.com/fizyr/keras-retinanet.git'
 
-'change list of classes in /keras-retinanet/keras_retinanet/preprocessing/pascal_voc.py'
+```console
+change list of classes in /keras-retinanet/keras_retinanet/preprocessing/pascal_voc.py
+```
+
+```python
 
 voc_classes = {
-    'safety_vest'        : 0
+    'safety_vest' : 0
 }
+```
 
+```console
 cd ./keras-retinanet/
-'python3 setup.py build_ext --inplace'
+python3 setup.py build_ext --inplace
+```
 <br/><br/>
 # Train the model
 
@@ -23,23 +30,30 @@ cd ./keras-retinanet/
 
 ## Run the training
 
-'python3 keras_retinanet/bin/train.py --tensorboard-dir ./TrainingOutput --snapshot-path ./TrainingOutput/snapshots --random-transform --steps 100 pascal ./PlumsVOC'
+```console
+python3 keras_retinanet/bin/train.py --tensorboard-dir ./TrainingOutput --snapshot-path ./TrainingOutput/snapshots --random-transform --steps 100 pascal ./PlumsVOC
+```
 
 ### To monitor the progress of training open tensorboard:
 
 Run tensorboard in a new terminal using
-'tensorboard --logdir ./TrainingOutput' <br/>
+```console
+tensorboard --logdir ./TrainingOutput
+```
+<br/>
 then open http://localhost:6006/ in a browser tab
 
 # Deploying
 Convert the latest(best) model to an inference mode: <br/><br/>
-'python3 keras_retinanet/bin/convert_model.py ./TrainingOutput/snapshots/WEIGHTSNAME.h5 ./RetinanetModels/PlumsInference.h5'
+```console
+python3 keras_retinanet/bin/convert_model.py ./TrainingOutput/snapshots/WEIGHTSNAME.h5 ./RetinanetModels/PlumsInference.h5
+```
 
 ## Now you can run scripts for video processing
 
-'video_processing(retinanet).ipynb'
+video_processing(retinanet).ipynb
 ### or
-'video_processing(rcnn+opencv).ipynb'
+video_processing(rcnn+opencv).ipynb
 
 # Accuracy improving
 ## The accuracy of model can be improved with implementation of object tracking and increacing the amount of training data. Also tuning of confidence threshold for detection can yield some benefits.
