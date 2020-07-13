@@ -1,15 +1,23 @@
 # Safety Vests Detector<br/><br/>
 
+## Were implemented 2 solutions to detect the safety vests:
 
 
-## Retinanet trained model  
-![retinanet trained model](./retinanet.gif)
-## Person detection + color detection
+
+## 1)Person detection + color detection (full video in repo)
 ![person detection color detection](./color_detection.gif)
 <br/><br/><br/><br/>
-# Setting up training
+## 2)Retinanet trained model  (full video in repo)
+![retinanet trained model](./retinanet.gif)
 
-## Clone keras-retinanet repo in ~/safety_vests_detection (folder of current repo):<br/>
+## For the first solution you don't need to train the model. Just clone the repo and have installed tensorflow, keras and dependecies.
+
+## To detect safety vests using retinanet trained model, we need to train it:
+
+# Setting up training
+## P.S you can skip the training, by downloading my weights https://drive.google.com/file/d/1GnFp8QMWBuYr8r1v94ibizKr4pS_gyEJ/view?usp=sharing
+
+### Clone keras-retinanet repo in ~/safety_vests_detection (folder of current repo):<br/>
 git clone https://github.com/fizyr/keras-retinanet.git
 
 
