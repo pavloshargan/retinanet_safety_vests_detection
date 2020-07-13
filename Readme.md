@@ -21,9 +21,8 @@ git clone https://github.com/fizyr/keras-retinanet.git
 
 
 
-```console
-change list of classes in /keras-retinanet/keras_retinanet/preprocessing/pascal_voc.py
-```
+
+### change list of classes in /keras-retinanet/keras_retinanet/preprocessing/pascal_voc.py
 
 ```python
 
@@ -31,6 +30,7 @@ voc_classes = {
     'safety_vest' : 0
 }
 ```
+### then run retinanet setup
 
 ```console
 cd ./keras-retinanet/
