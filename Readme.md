@@ -6,7 +6,6 @@
 
 ## 1)Person detection + color detection (full video in repo)
 ![person detection color detection](./color_detection.gif)
-<br/><br/><br/><br/>
 ## 2)Retinanet trained model  (full video in repo)
 ![retinanet trained model](./retinanet.gif)
 
