@@ -39,7 +39,7 @@ python3 setup.py build_ext --inplace
 <br/><br/>
 # Train the model
 
-### download PlumsVOC folder from https://drive.google.com/file/d/11BetQCcj8z0KIhNSeOrB_gKkkq47A4ki/view?usp=sharing and place it in this repo
+### download "PlumsVOC" folder with training data from https://drive.google.com/file/d/11BetQCcj8z0KIhNSeOrB_gKkkq47A4ki/view?usp=sharing (or create your own datatset) and place it in this repo
 
 ## Make directory to save the snaphots: <br/>
 ```console
